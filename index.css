@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --white-color: #fff;
+  --black-color: #111111;
+
+  --primary-color: #3a6150;
+  --secondary-color: hsl(152, 25%, 70%);
+  --background-color: #f9f9f9;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 62.5%;
+  color: var(--black-color);
+}
+
+body {
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* sections */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.7rem;
+  padding: 1.6rem 6.4rem;
+  background-color: var(--white-color);
+}
+
+.nav {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    margin-right: auto;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+  list-style: none;
+  color: var(--black-color);
+}
+
+.list_item {
+  color: var(--black-color);
+  padding-right: 1.6rem;
+}
+
+.list li {
+    position: relative;
+}
+
+.list li::after {
+    content: "|";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.list li:last-child::after {
+    content: "";
+}
+
+.arrow_down {
+    background: none;
+    border: none;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_input {
+    border: 1px solid var(--primary-color);
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+    width: 37.6rem;
+    height: 4.8rem;
+    padding: 1.1rem 0 1.1rem 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: var(--primary-color);
+}
+
+.search_input::placeholder {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: var(--secondary-color);
+}
+
+.search_button {
+    background-color: var(--primary-color);
+    width: 4.8rem;
+    height: 4.8rem;
+    border: 1px solid var(--primary-color);
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+
+
+

@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <link>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"/>
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css" />
+<title>Accessibility</title>
 </head>
+
 <body>
-    
+    <header class="padding-inline header">
+        <img src="assets/logo.svg" width="34" height="34" alt="Logo" />
+        <nav class="nav">
+            <ul class="list">
+                <li><a href="#" class="list_item">About Us</a></li>
+                <li><a href="#" class="list_item">Contact Us</a></li>
+                <li><a href="#" class="list_item">Blog</a></li>
+                <li><a href="#" class="list_item">Site Map</a></li>
+                <li>
+                    <a href="#" class="list_item">Eng</a>
+                    <button class="arrow_down">
+                        <img src="assets/arrow-down.svg" alt="Arrow down" />
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search this site" class="search_input" />
+            <button class="search_button">
+                <img src="assets/search.svg" width="32" height="32" alt="Search icon">
+            </button>
+        </div>
+    </header>
 </body>
+
 </html>
