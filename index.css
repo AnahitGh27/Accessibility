@@ -3,10 +3,14 @@
 :root {
   --white-color: #fff;
   --black-color: #111111;
+  --red-color: red;
 
   --primary-color: #3a6150;
-  --secondary-color: hsl(152, 25%, 70%);
+  --secondary-color: rgba(58, 97, 80, 0.7);
+  --tertiary-color: rgba(17, 17, 17, 0.5);
+  --text-color: #131516;
   --background-color: #f9f9f9;
+  --background-color2: #71837b;
 }
 
 *,
@@ -230,4 +234,233 @@ h4 {
   font-weight: 700;
   line-height: 2.1rem;
   color: var(--white-color);
+}
+
+.contact_us {
+  padding: 8rem 6.4rem 12rem 6.4rem;
+  background-color: var(--background-color2);
+}
+
+.contact_us_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  background-color: var(--white-color);
+}
+
+.contact_us_left {
+  width: 35%;
+  height: 63.7rem;
+  border-radius: 1.2rem;
+  background-image: url("assets/leaf.jpeg");
+  background-size: cover;
+  background-position: 93% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 4.2rem 4.8rem 4.8rem 4.2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+}
+
+.contact_us_left_heading {
+  margin-bottom: 1.8rem;
+}
+
+.contact_us_left_text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: var(--black-color);
+}
+
+.contact_us_left_p {
+  margin-bottom: 5.6rem;
+}
+
+.contact_us_left_list1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1.8rem;
+  list-style: none;
+  margin-bottom: 23.3rem;
+}
+
+.contact_us_left_list1 li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_us_left_list1 img {
+  margin-right: 2.4rem;
+}
+
+.contact_us_left_list2 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 3.6rem;
+  list-style: none;
+}
+
+.contact_us_right {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.6rem;
+  padding: 0 2rem;
+}
+
+.contact_us_right_grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1.8rem;
+  row-gap: 2.6rem;
+}
+
+.gtid_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--text-color);
+}
+
+.name::before,
+.lastname::before {
+  content: "*";
+  margin-right: 0.3rem;
+  color: var(--red-color);
+}
+
+.grid_item_input {
+  width: 100%;
+  padding: 1.2rem 0.8rem;
+  border: 1px solid var(--black-color);
+  border-radius: 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--black-color);
+}
+
+.grid_item_input::placeholder,
+.phone_input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--tertiary-color);
+}
+
+.grid_item_input:active,
+.grid_item_input:focus,
+.grid_item_input:focus-visible {
+  border: 1px solid var(--primary-color);
+  border-radius: 0.3rem;
+}
+
+.gtid_item_phone {
+  width: 100%;
+  border: 1px solid var(--black-color);
+  border-radius: 0.2rem;
+  padding: 0 0 0 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--black-color);
+}
+
+.phone_span {
+  color: var(--tertiary-color);
+}
+
+.phone_input {
+  width: 100%;
+  border: none;
+  padding: 1.2rem 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--black-color);
+}
+
+.contact_us_right_list {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 3.6rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+.contact_us_right_list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.radio_label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.textarea_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 1.2rem 0.8rem;
+  height: 10.4rem;
+  border-radius: 0.3rem;
+}
+
+.checkbox_wrapper {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.checkbox_terms {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 2rem;
+}
+
+.send_btn {
+  align-self: flex-end;
 }
