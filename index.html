@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessibility</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <li>
                     <a href="#" class="list_item" aria-label="Language selection">Eng</a>
                     <button class="arrow_down" aria-label="Expand language options">
-                        <img src="assets/arrow-down.svg" alt="Expand">
+                        <img src="assets/arrow-down.svg" alt="Expand" width="12" height="10">
                     </button>
                 </li>
             </ul>
@@ -46,12 +47,12 @@
                 <button class="btn" aria-label="Buy now">Buy Now</button>
             </div>
             <div class="hero_right">
-                <img src="assets/green_leaves1.jpeg" alt="Green leaves" class="hero_img">
+                <img src="assets/green_leaves1.jpeg" alt="Green leaves" class="hero_img" loading="lazy">
             </div>
         </section>
         <section class="about_us" id="about">
             <article class="about_us_article">
-                <img src="assets/green_leaves2.jpeg" alt="Small green leaves" width="180" height="230">
+                <img src="assets/green_leaves2.jpeg" alt="Small green leaves" width="180" height="230" loading="lazy">
                 <div class="about_us_description">
                     <h4>About Us</h4>
                     <p class="about_us_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
@@ -199,8 +200,8 @@
                     <li class="footer_up_list2_email"><u>plantme.store@gmail.com</u></li>
                 </ul>
                 <div class="cards">
-                    <img src="assets/visa.png" alt="Visa logo" width="50" height="28">
-                    <img src="assets/mastercard.png" alt="Mastercard logo" width="50" height="41">
+                    <img src="assets/visa.svg" alt="Visa logo" width="50" height="28">
+                    <img src="assets/mastercard.svg" alt="Mastercard logo" width="50" height="41">
                 </div>
             </div>
         </div>
@@ -213,7 +214,6 @@
             </ul>
         </div>
     </footer>
-    <script src="index.js"></script>
 </body>
 
 </html>
