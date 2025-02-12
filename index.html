@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<link>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="index.css" />
-<title>Accessibility</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header class="padding-inline header">
-        <img src="assets/logo.svg" width="34" height="34" alt="Logo" />
-        <nav class="nav">
+        <img src="assets/logo.svg" width="34" height="34" alt="PlantMe Logo">
+        <nav class="nav" aria-label="Main Navigation">
             <ul class="list">
-                <li><a href="#" class="list_item">About Us</a></li>
-                <li><a href="#" class="list_item">Contact Us</a></li>
+                <li><a href="#about" class="list_item">About Us</a></li>
+                <li><a href="#contact" class="list_item">Contact Us</a></li>
                 <li><a href="#" class="list_item">Blog</a></li>
                 <li><a href="#" class="list_item">Site Map</a></li>
                 <li>
-                    <a href="#" class="list_item">Eng</a>
-                    <button class="arrow_down">
-                        <img src="assets/arrow-down.svg" alt="Arrow down" />
+                    <a href="#" class="list_item" aria-label="Language selection">Eng</a>
+                    <button class="arrow_down" aria-label="Expand language options">
+                        <img src="assets/arrow-down.svg" alt="Expand">
                     </button>
                 </li>
             </ul>
         </nav>
         <div class="search">
-            <input type="text" placeholder="Search this site" class="search_input" />
-            <button class="search_button">
+            <input type="text" id="search" placeholder="Search this site" class="search_input"
+                aria-label="Search input">
+            <button class="search_button" aria-label="Search">
                 <img src="assets/search.svg" width="32" height="32" alt="Search icon">
             </button>
         </div>
@@ -41,13 +43,13 @@
                     Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna
                     hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit
                     morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <button class="btn">Buy Now</button>
+                <button class="btn" aria-label="Buy now">Buy Now</button>
             </div>
             <div class="hero_right">
                 <img src="assets/green_leaves1.jpeg" alt="Green leaves" class="hero_img">
             </div>
         </section>
-        <section class="about_us">
+        <section class="about_us" id="about">
             <article class="about_us_article">
                 <img src="assets/green_leaves2.jpeg" alt="Small green leaves" width="180" height="230">
                 <div class="about_us_description">
@@ -57,7 +59,7 @@
                         diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
                         sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.</p>
-                    <button class="learn_more_btn">
+                    <button class="learn_more_btn" aria-label="Learn more about us">
                         <u>Learn more about</u> &rarr;
                     </button>
                 </div>
@@ -77,7 +79,7 @@
                 </div>
             </article>
         </section>
-        <section class="contact_us">
+        <section class="contact_us" id="contact">
             <div class="contact_us_wrapper">
                 <div class="contact_us_left">
                     <h2 class="contact_us_left_heading">Contact Us</h2>
@@ -86,13 +88,13 @@
                         hours. Happy to see your message!</p>
                     <ul class="contact_us_left_list1">
                         <li>
-                            <a href="#">
+                            <a href="tel:+380931532456">
                                 <img src="assets/facebook.svg" alt="Facebook icon" width="24" height="24">
                                 <span class="contact_us_left_text">+380 93 15 32 456</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="mailto:example@gmail.com">
                                 <img src="assets/facebook.svg" alt="Facebook icon" width="24" height="24">
                                 <span class="contact_us_left_text">example@gmail.com</span>
                             </a>
@@ -104,34 +106,29 @@
                             </a>
                         </li>
                     </ul>
-                    <ul class="contact_us_left_list2">
-                        <li><a><img src="assets/facebook.svg" alt="Facebook icon" width="32" height="32"></a></li>
-                        <li><a><img src="assets/facebook.svg" alt="Facebook icon" width="32" height="32"></a></li>
-                        <li><a><img src="assets/facebook.svg" alt="Facebook icon" width="32" height="32"></a></li>
-                    </ul>
                 </div>
                 <div class="contact_us_right">
                     <div class="contact_us_right_grid">
                         <div class="gtid_item">
-                            <label class="name label">First Name</label>
-                            <input type="text" placeholder="John" class="grid_item_input" />
+                            <label class="name label" for="first_name">First Name</label>
+                            <input type="text" placeholder="John" id="first_name" class="grid_item_input" />
                         </div>
                         <div class="gtid_item">
-                            <label class="lastname label">Last Name</label>
-                            <input type="text" placeholder="Doe" class="grid_item_input" />
+                            <label class="lastname label" for="last_name">Last Name</label>
+                            <input type="text" placeholder="Doe" id="last_name" class="grid_item_input" />
                         </div>
                         <div class="gtid_item">
-                            <label class="email label">Email</label>
-                            <input type="text" placeholder="example@gmail.com" class="grid_item_input" />
+                            <label class="email label" for="email">Email</label>
+                            <input type="text" placeholder="example@gmail.com" id="email" class="grid_item_input" />
                         </div>
                         <div class="gtid_item">
-                            <label class="phone label">Phone Number</label>
+                            <label class="phone label" for="phone">Phone Number</label>
                             <div class="gtid_item_phone">
                                 <span class="phone_code">+380</span>
                                 <img src="assets/arrow-down.svg" alt="Arrow down" width="8" height="16"
                                     class="arrow_down">
                                 <span class="phone_span">|</span>
-                                <input type="text" placeholder="00 000 00 00" class="phone_input" />
+                                <input type="text" placeholder="00 000 00 00" id="phone" class="phone_input" />
                             </div>
                         </div>
                     </div>
@@ -172,6 +169,7 @@
                         </div>
                     </div>
                     <button class="btn send_btn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -188,10 +186,10 @@
             </div>
             <div>
                 <ul class="footer_up_list1">
-                    <li><a>About Us</a></li>
-                    <li><a>Contact Us</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Site Map</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Site Map</a></li>
                 </ul>
             </div>
             <div>
@@ -215,6 +213,7 @@
             </ul>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
